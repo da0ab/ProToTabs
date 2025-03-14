@@ -1,0 +1,29 @@
+:root {
+    --desctope:       1200px;
+    --m-b:            4rem;
+    --sec:            2rem;
+    --red:            #A02C2C;
+}
+.main  {
+    max-width: var(--desctope);
+    margin-left:  var(--main, auto);
+    margin-right: var(--main, auto);
+}
+section  {
+    padding: var(--sec, 0);
+    margin-bottom: var(--m-b);
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    background: #f6f6f6;
+    padding: 2rem;
+    width: 40%;
+}
+pre {
+border: 1px solid #f6f6f6;
+    padding: 2rem;
+    width: 40%;
+    margin: auto;
+}

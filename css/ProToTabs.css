@@ -1,0 +1,46 @@
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2px;
+    margin-bottom: 1rem;
+    --tab: #ddd;
+    --tab-open: #eee;
+}
+.tabs h5 {
+    order: -1;
+    margin-bottom: 0;
+    color: #333;
+    background: #fff;
+    border: 1px solid var(--tab);
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+.tabs h5.open {
+    background: var(--tab-open)
+}
+.tabs > div {
+    display: none;
+}
+.tabs > div.open {
+    display: block;
+    width:100%;
+    background: var(--tab-open);
+    border: 1px solid var(--tab-open);
+    padding: 1rem;
+    margin-top: -2px
+}
+.tabs > div.open ul {
+    margin-left: 1rem;
+}
+@media (max-width: 769px) {
+    .tabs, .tabs > div {
+        display: block;
+        --tab: transparance;
+        --tab-open: transparance;
+    }
+    .tabs h5, .tabs > div.open {
+        padding: 0;
+        margin-bottom: 1rem
+    }
+}
